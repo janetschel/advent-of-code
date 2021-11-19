@@ -6,7 +6,7 @@ new:
 	@if [ $(day) -lt 10 ] ; then \
   		mkdir src/main/java/dev/janetschel/calendar/day0$(day); \
   		cd src/main/java/dev/janetschel/calendar/day0$(day); \
-  		cp template Puzzle.java; \
+  		cp ../../../../../../../template Puzzle.java; \
 		touch input.txt; \
   	else \
   		mkdir src/main/java/dev/janetschel/calendar/day$(day); \
