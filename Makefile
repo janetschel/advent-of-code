@@ -6,12 +6,12 @@ new:
 	@if [ $(day) -lt 10 ] ; then \
   		mkdir src/main/java/dev/janetschel/calendar/day0$(day); \
   		cd src/main/java/dev/janetschel/calendar/day0$(day); \
-  		touch Day0$(day).java; \
+  		cp template Puzzle.java; \
 		touch input.txt; \
   	else \
   		mkdir src/main/java/dev/janetschel/calendar/day$(day); \
   		cd src/main/java/dev/janetschel/calendar/day$(day); \
-		touch Day$(day).java; \
+		cp ../../../../../../../template Puzzle.java; \
 		touch input.txt; \
     fi
 	@echo "Files successfully created.. happy hacking :)"
