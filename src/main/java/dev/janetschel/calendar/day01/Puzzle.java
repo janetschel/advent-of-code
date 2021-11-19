@@ -16,14 +16,6 @@ public class Puzzle {
     public Long solve(List<String> in) {
         var input = longs(in);
 
-        for (var x : input) {
-            for (var y : input) {
-                if (x + y == 2020) {
-                    return x * y;
-                }
-            }
-        }
-
         return null;
     }
 }
