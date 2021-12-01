@@ -1,4 +1,4 @@
-# Advent of code 2021
+# Advent of Code 2021
 Welcome to my repo for this year's [advent-of-code](https://adventofcode.com/).  
 I have decided to not put THAT much effort in it than [last year](https://github.com/janetschel/advent-of-go-2020) where I did a recap of the day and all.
 
