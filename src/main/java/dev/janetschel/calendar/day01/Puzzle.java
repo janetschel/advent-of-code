@@ -8,8 +8,10 @@ import static dev.janetschel.utils.File.read;
 public class Puzzle {
     public static void main(String[] args) {
         var input = longs(read("01"));
-        var result = new Puzzle().solve(input);
-        var resultPt2 = new Puzzle().solvePart2(input);
+        var p = new Puzzle();
+        
+        var result = p.solve(input);
+        var resultPt2 = p.solvePart2(input);
 
         System.out.println("result = " + result);
         System.out.println("resultPt2 = " + resultPt2);

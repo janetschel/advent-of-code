@@ -5,7 +5,9 @@ import static dev.janetschel.utils.File.read;
 public class Puzzle {
     public static void main(String[] args) {
         var input = read("DAY_HERE");
-        var result = new Puzzle().solve(input);
+        var p = new Puzzle();
+
+        var result = p.solve(input);
 
         System.out.println("result = " + result);
     }
