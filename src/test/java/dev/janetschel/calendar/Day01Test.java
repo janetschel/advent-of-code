@@ -11,7 +11,7 @@ import java.util.List;
 import static dev.janetschel.utils.Converter.longs;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
-public class Day1Test {
+public class Day01Test {
     private static GenericPuzzle puzzle;
 
     @BeforeAll
