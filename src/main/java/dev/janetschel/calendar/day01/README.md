@@ -8,7 +8,7 @@ That said, here are my solve times for day 1:
 - `00:02:09` for part 1 (#724) ⭐️
 - `00:05:10` for part 2 (#675) ⭐️
 
-Delta time from part 1 to part 2: `+00:03:01`  
-Delta "places" from part 1 to part 2: `-49`
+Delta (Δ) time from part 1 to part 2: `+00:03:01`  
+Δ "places" from part 1 to part 2: `-49`
 
 Thank you for coming to my TED talk
