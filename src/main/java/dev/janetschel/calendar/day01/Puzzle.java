@@ -13,8 +13,9 @@ public class Puzzle {
         System.out.println("result = " + result);
     }
 
-    public Long solve(List<String> in) {
+    public String solve(List<String> in) {
         var input = longs(in);
+        
 
         return null;
     }
