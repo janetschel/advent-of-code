@@ -48,7 +48,7 @@ public class Day1Test {
                 769
                 792""";
 
-        var result = puzzle.solve(longs(split(in, "\n")));
+        var result = puzzle.solvePart2(longs(split(in, "\n")));
         assertThat(result).isEqualTo(5);
     }
 
