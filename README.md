@@ -20,12 +20,13 @@ All you need to do if you want to create a new day to start coding is:
 
 ## Utils
 My [utils](https://github.com/janetschel/advent-of-code-2021/tree/main/src/main/java/dev/janetschel/utils) will have some handy functions/classes to work with the input.  
-Most notably the "implementation" of my on `Optionals<T>` to speed up handling input. Feel free to PR this.
+Most notably the "implementation" of my of `Optional<Long>` to speed up handling input. Feel free to PR this. Will be updated during AoC.
 
 <hr/>
 
 ## (Public) Leaderboard appearances
-Although each day will have its own `README.md` all of my leaderboard appearances (< 1000) will be listed here.
+Although each day will have its own `README.md` all of my leaderboard appearances (< 1000) for `<part1, part2>` will be listed here.  
+For the exact solve times check out each day's `README.md`. 
 
 - Day 1: #724, #675
 - ...
