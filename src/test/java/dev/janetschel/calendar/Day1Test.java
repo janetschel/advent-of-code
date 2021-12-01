@@ -1,5 +1,6 @@
-package dev.janetschel.calendar.day01;
+package dev.janetschel.calendar;
 
+import dev.janetschel.calendar.day01.Puzzle;
 import dev.janetschel.interfaces.GenericPuzzle;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
