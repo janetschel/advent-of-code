@@ -1,11 +1,13 @@
 package dev.janetschel.calendar.day01;
 
+import dev.janetschel.interfaces.GenericPuzzle;
+
 import java.util.List;
 
 import static dev.janetschel.utils.Converter.longs;
 import static dev.janetschel.utils.File.read;
 
-public class Puzzle {
+public class Puzzle implements GenericPuzzle {
     public static void main(String[] args) {
         var input = longs(read("01"));
         var p = new Puzzle();

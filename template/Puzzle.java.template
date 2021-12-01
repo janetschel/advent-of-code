@@ -2,18 +2,24 @@ import java.util.List;
 
 import static dev.janetschel.utils.File.read;
 
-public class Puzzle {
+public class Puzzle implements GenericPuzzle  {
     public static void main(String[] args) {
-        var input = read("DAY_HERE");
+        var input = long(read("DAY_HERE"));
         var p = new Puzzle();
 
         var result = p.solve(input);
+        var resultPart2 = p.solvePart2(input);
 
         System.out.println("result = " + result);
+        System.out.println("resultPt2 = " + resultPart2);
     }
 
-    public String solve(List<String> in) {
-        var input = longs(in);
+    public String solve(List<Long> in) {
+
+        return null;
+    }
+
+    public Long solvePart2(List<Long> in) {
 
         return null;
     }
