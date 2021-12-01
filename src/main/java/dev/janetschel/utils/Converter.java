@@ -18,7 +18,8 @@ public class Converter {
     public static<T> List<Pair<T>> pairs(List<T> in) {
         var out = new ArrayList<Pair<T>>();
         for (int i = 1; i < in.size(); i++) {
-            out.add(new Pair<T>(in.get(i), in.get(i - 1)));
+            // prev, curr
+            out.add(new Pair<T>(in.get(i - 1), in.get(i)));
         }
 
         return out;

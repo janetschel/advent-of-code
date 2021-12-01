@@ -16,7 +16,7 @@ public class RefactoredPuzzle {
 
     public Long solvePart1(List<Long> in) {
         return pairs(in).stream()
-                .filter(p -> p.first() > p.second())
+                .filter(p -> p.first() < p.second())
                 .count();
     }
 
