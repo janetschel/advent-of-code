@@ -4,22 +4,22 @@ import static dev.janetschel.utils.File.read;
 
 public class Puzzle implements GenericPuzzle  {
     public static void main(String[] args) {
-        var input = long(read("DAY_HERE"));
+        var input = read("DAY_HERE");
         var p = new Puzzle();
 
         var result = p.solve(input);
         var resultPart2 = p.solvePart2(input);
 
         System.out.println("result = " + result);
-        System.out.println("resultPt2 = " + resultPart2);
+        System.out.println("resultPart2 = " + resultPart2);
     }
 
-    public String solve(List<Long> in) {
+    public String solve(List<String> input) {
 
         return null;
     }
 
-    public Long solvePart2(List<Long> in) {
+    public Long solvePart2(List<String> input) {
 
         return null;
     }

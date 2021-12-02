@@ -9,7 +9,7 @@ import static dev.janetschel.utils.File.read;
 
 public class Puzzle implements GenericPuzzle {
     public static void main(String[] args) {
-        var input = longs(read("01"));
+        var input = read("01");
         var p = new Puzzle();
         
         var result = p.solve(input);
@@ -19,7 +19,8 @@ public class Puzzle implements GenericPuzzle {
         System.out.println("resultPt2 = " + resultPt2);
     }
 
-    public Long solve(List<Long> in) {
+    public Long solve(List<String> input) {
+        var in = longs(input);
         var increased = 0L;
         for (int i = 1; i < in.size(); i++) {
             if (in.get(i) > in.get(i - 1)) {
@@ -30,7 +31,8 @@ public class Puzzle implements GenericPuzzle {
         return increased;
     }
 
-    public Long solvePart2(List<Long> in) {
+    public Long solvePart2(List<String> input) {
+        var in = longs(input);
         var prev = 0L;
         var increased = 0L;
         for (int i = 0; i < in.size() - 3; i++) {

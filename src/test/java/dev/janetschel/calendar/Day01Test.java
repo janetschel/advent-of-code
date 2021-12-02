@@ -33,7 +33,7 @@ public class Day01Test {
                 260
                 263""";
 
-        var result = puzzle.solve(longs(split(in, "\n")));
+        var result = puzzle.solve(split(in, "\n"));
         assertThat(result).isEqualTo(7);
     }
 
@@ -49,7 +49,7 @@ public class Day01Test {
                 769
                 792""";
 
-        var result = puzzle.solvePart2(longs(split(in, "\n")));
+        var result = puzzle.solvePart2(split(in, "\n"));
         assertThat(result).isEqualTo(5);
     }
 

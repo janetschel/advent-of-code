@@ -1,4 +1,4 @@
-day = 12
+day = $(shell date +'%-d')
 
 new:
 	@echo "Creating new file structure for day" $(day)"..."
@@ -6,7 +6,7 @@ new:
 	@if [ $(day) -lt 10 ] ; then \
   		mkdir src/main/java/dev/janetschel/calendar/day0$(day); \
   		cd src/main/java/dev/janetschel/calendar/day0$(day); \
-  		cp ../../../../../..//template/Puzzle.java.template Puzzle.java; \
+  		cp ../../../../../../../template/Puzzle.java.template Puzzle.java; \
   		cp ../../../../../../../template/README.md.template README.md; \
 		touch input.txt; \
   	else \
