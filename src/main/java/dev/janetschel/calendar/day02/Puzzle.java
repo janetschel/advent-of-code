@@ -22,15 +22,15 @@ public class Puzzle implements GenericPuzzle {
         var hor = 0L;
         var depth = 0L;
 
-        for (var dir: input) {
-            var in = dir.split(" ");
+        for (var cmd: input) {
+            var in = cmd.split(" ");
+            var dir = in[0];
+            var x = Long.parseLong(in[1]);
 
-            switch (in[0]) {
-                case "forward" -> hor += Long.parseLong(in[1]);
-                case "down" -> depth += Long.parseLong(in[1]);
-                case "up" -> {
-                    depth -= Long.parseLong(in[1]);
-                }
+            switch (dir) {
+                case "forward" -> hor += x;
+                case "down" -> depth += x;
+                case "up" -> depth -= x;
             }
         }
 
@@ -42,18 +42,18 @@ public class Puzzle implements GenericPuzzle {
         var depth = 0L;
         var aim = 0L;
 
-        for (var dir: input) {
-            var in = dir.split(" ");
+        for (var cmd: input) {
+            var in = cmd.split(" ");
+            var dir = in[0];
+            var x = Long.parseLong(in[1]);
 
-            switch (in[0]) {
+            switch (dir) {
                 case "forward" -> {
-                    hor += Long.parseLong(in[1]);
-                    depth += aim * Long.parseLong(in[1]);
+                    hor += x;
+                    depth += aim * x;
                 }
-                case "down" -> aim += Long.parseLong(in[1]);
-                case "up" -> {
-                    aim -= Long.parseLong(in[1]);
-                }
+                case "down" -> aim += x;
+                case "up" -> aim -= x;
             }
         }
 
