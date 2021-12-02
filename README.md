@@ -29,5 +29,5 @@ Although each day will have its own `README.md` all of my leaderboard appearance
 For the exact solve times check out each day's `README.md`. 
 
 - Day 1: #724, #675
-- ...
+- Day 2: ----, #650
 
