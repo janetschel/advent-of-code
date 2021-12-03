@@ -5,21 +5,9 @@ import dev.janetschel.interfaces.GenericPuzzle;
 import java.util.List;
 
 import static dev.janetschel.util.Converter.longs;
-import static dev.janetschel.util.File.read;
 
 public class Puzzle implements GenericPuzzle {
-    public static void main(String[] args) {
-        var input = read("01");
-        var p = new Puzzle();
-        
-        var result = p.solve(input);
-        var resultPt2 = p.solvePart2(input);
-
-        System.out.println("result = " + result);
-        System.out.println("resultPt2 = " + resultPt2);
-    }
-
-    public Long solve(List<String> input) {
+    public Long solvePart1(List<String> input) {
         var in = longs(input);
         var increased = 0L;
         for (int i = 1; i < in.size(); i++) {

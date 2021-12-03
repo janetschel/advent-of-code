@@ -4,21 +4,8 @@ import dev.janetschel.interfaces.GenericPuzzle;
 
 import java.util.List;
 
-import static dev.janetschel.util.File.read;
-
 public class Puzzle implements GenericPuzzle {
-    public static void main(String[] args) {
-        var input = read("02");
-        var p = new Puzzle();
-
-        var result = p.solve(input);
-        var resultPart2 = p.solvePart2(input);
-
-        System.out.println("result = " + result);
-        System.out.println("resultPart2 = " + resultPart2);
-    }
-
-    public Long solve(List<String> input) {
+    public Long solvePart1(List<String> input) {
         var hor = 0L;
         var depth = 0L;
 

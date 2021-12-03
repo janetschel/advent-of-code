@@ -9,23 +9,11 @@ import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 
 import static dev.janetschel.util.Converter.flipBits;
-import static dev.janetschel.util.File.read;
 import static dev.janetschel.util.Math.toDecimal;
 import static java.util.Comparator.reverseOrder;
 
 public class Puzzle implements GenericPuzzle {
-    public static void main(String[] args) {
-        var input = read("03");
-        var p = new Puzzle();
-
-        var result = p.solve(input);
-        var resultPart2 = p.solvePart2(input);
-
-        System.out.println("result = " + result);
-        System.out.println("resultPart2 = " + resultPart2);
-    }
-
-    public Long solve(List<String> input) {
+    public Long solvePart1(List<String> input) {
         var gamma = getMostCommonCharactersAtEachPosition(input).stream()
                 .reduce("", (str, current) -> str += current);
 
