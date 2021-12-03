@@ -1,14 +1,14 @@
 package dev.janetschel;
 
-import annotation.ExecutedDays;
+import dev.janetschel.annotation.ExecutedDays;
 import dev.janetschel.interfaces.GenericPuzzle;
 import dev.janetschel.util.CommandLineTools;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
 
-import static annotation.ExecutedDays.Day.ALL_DAYS;
-import static annotation.ExecutedDays.Day.getDayRepresentation;
+import static dev.janetschel.annotation.ExecutedDays.Day.ALL_DAYS;
+import static dev.janetschel.annotation.ExecutedDays.Day.getDayRepresentation;
 import static com.google.common.reflect.ClassPath.from;
 import static dev.janetschel.util.CommandLineTools.Part.FIRST;
 import static dev.janetschel.util.CommandLineTools.Part.SECOND;

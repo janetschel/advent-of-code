@@ -1,11 +1,11 @@
-package annotation;
+package dev.janetschel.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.lang.annotation.Target;
 
-import static annotation.ExecutedDays.Day.ALL_DAYS;
+import static dev.janetschel.annotation.ExecutedDays.Day.ALL_DAYS;
 
 @Retention(RetentionPolicy.RUNTIME)
 @Target({ElementType.TYPE})
