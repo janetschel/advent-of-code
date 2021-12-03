@@ -1,6 +1,7 @@
 package dev.janetschel.utils;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Converter {
@@ -44,5 +45,9 @@ public class Converter {
         return out;
     }
 
-
+    public static String flipBits(String in) {
+        return Arrays.stream(in.split(""))
+                .map(num -> num.equals("1") ? "0" : "1")
+                .reduce("", (str, current) -> str += current);
+    }
 }

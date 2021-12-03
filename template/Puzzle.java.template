@@ -14,7 +14,7 @@ public class Puzzle implements GenericPuzzle  {
         System.out.println("resultPart2 = " + resultPart2);
     }
 
-    public String solve(List<String> input) {
+    public Long solve(List<String> input) {
 
         return null;
     }
