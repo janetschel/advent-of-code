@@ -1,4 +1,4 @@
-package dev.janetschel.utils;
+package dev.janetschel.util;
 
 // MaybeLong (more or less Optional<Long>)
 public class MLong {

@@ -8,9 +8,9 @@ import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.function.Function;
 
-import static dev.janetschel.utils.Converter.flipBits;
-import static dev.janetschel.utils.File.read;
-import static dev.janetschel.utils.Math.toDecimal;
+import static dev.janetschel.util.Converter.flipBits;
+import static dev.janetschel.util.File.read;
+import static dev.janetschel.util.Math.toDecimal;
 import static java.util.Comparator.reverseOrder;
 
 public class Puzzle implements GenericPuzzle {

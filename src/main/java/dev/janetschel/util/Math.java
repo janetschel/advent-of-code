@@ -1,4 +1,4 @@
-package dev.janetschel.utils;
+package dev.janetschel.util;
 
 public class Math {
     public static Long toDecimal(String binary) {

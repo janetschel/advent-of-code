@@ -2,8 +2,8 @@ package dev.janetschel.calendar.day01.refactored;
 
 import java.util.List;
 
-import static dev.janetschel.utils.Converter.*;
-import static dev.janetschel.utils.File.read;
+import static dev.janetschel.util.Converter.*;
+import static dev.janetschel.util.File.read;
 
 public class RefactoredPuzzle {
     public static void main(String[] args) {

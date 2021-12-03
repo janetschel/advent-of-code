@@ -4,8 +4,8 @@ import dev.janetschel.interfaces.GenericPuzzle;
 
 import java.util.List;
 
-import static dev.janetschel.utils.Converter.longs;
-import static dev.janetschel.utils.File.read;
+import static dev.janetschel.util.Converter.longs;
+import static dev.janetschel.util.File.read;
 
 public class Puzzle implements GenericPuzzle {
     public static void main(String[] args) {
