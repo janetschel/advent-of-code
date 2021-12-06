@@ -32,14 +32,14 @@ public class Puzzle implements GenericPuzzle {
     }
 
     public Long solvePart2(List<String> input) {
-        long[] counts = new long[9];
+        var counts = new long[9];
 
         for (var line : input.get(0).split(",")) {
-            ++counts[parseInt(line)];
+            counts[parseInt(line)]++;
         }
 
         for (var i = 0; i < 256; i++) {
-            long[] newCounts = new long[9];
+            var newCounts = new long[9];
 
             //noinspection ManualArrayCopy
             for (int j = 1; j < newCounts.length; j++) {
