@@ -8,7 +8,7 @@ import lombok.SneakyThrows;
 import java.io.IOException;
 
 import static com.google.common.reflect.ClassPath.from;
-import static dev.janetschel.annotation.ExecutedDays.Day.DAY_06;
+import static dev.janetschel.annotation.ExecutedDays.Day.ALL_DAYS;
 import static dev.janetschel.annotation.ExecutedDays.Day.getDayRepresentation;
 import static dev.janetschel.util.CommandLineTools.Part.FIRST;
 import static dev.janetschel.util.CommandLineTools.Part.SECOND;
@@ -16,7 +16,7 @@ import static dev.janetschel.util.CommandLineTools.log;
 import static dev.janetschel.util.File.read;
 import static java.lang.Thread.currentThread;
 
-@ExecutedDays(day = DAY_06)
+@ExecutedDays(day = ALL_DAYS)
 public class Calendar {
     @SuppressWarnings({"UnstableApiUsage", "unchecked"})
     @SneakyThrows(value = IOException.class)

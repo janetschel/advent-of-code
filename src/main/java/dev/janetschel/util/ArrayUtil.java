@@ -3,6 +3,9 @@ package dev.janetschel.util;
 import dev.janetschel.calendar.day04.models.Number;
 
 import java.util.Arrays;
+import java.util.List;
+
+import static java.lang.Integer.parseInt;
 
 public class ArrayUtil {
     public static Number[][] rotateClockwise(Number[][] a) {
@@ -24,5 +27,15 @@ public class ArrayUtil {
         }
 
         return array;
+    }
+
+    public static long[] fromInput(List<String> input, int delta) {
+        var counts = new long[delta];
+
+        for (var line : input.get(0).split(",")) {
+            counts[parseInt(line)]++;
+        }
+
+        return counts;
     }
 }
