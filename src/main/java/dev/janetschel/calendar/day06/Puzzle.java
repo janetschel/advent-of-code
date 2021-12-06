@@ -11,7 +11,7 @@ import static dev.janetschel.util.Converter.longs;
 import static java.lang.Integer.parseInt;
 
 public class Puzzle implements GenericPuzzle {
-    // Could've refactored like in part1 to make it run faster (pt1: ~86ms, pt2: ~4ms) but nah
+    // Could've refactored like in part2 to make it run faster (pt1: ~86ms, pt2: ~4ms) but nah
     public Long solvePart1(List<String> input) {
         var longs = longs(Arrays.stream(input.get(0).split(",")).toList());
         var current = new ArrayList<>(longs);
@@ -38,7 +38,7 @@ public class Puzzle implements GenericPuzzle {
             ++counts[parseInt(line)];
         }
 
-        for (long i = 0; i < 256; i++) {
+        for (var i = 0; i < 256; i++) {
             long[] newCounts = new long[9];
 
             //noinspection ManualArrayCopy
