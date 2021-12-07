@@ -1,4 +1,4 @@
-day = 12
+day = $(shell date +'%-d')
 
 new:
 	@echo "Creating new file structure for day" $(day) "(year:" $(year)")..."
