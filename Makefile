@@ -8,13 +8,11 @@ new:
   		cd src/main/java/dev/janetschel/calendar/year2021/day0$(day); \
   		cp ../../../../../../../template/Puzzle.java.template Puzzle.java; \
   		cp ../../../../../../../template/README.md.template README.md; \
-		touch input.txt; \
   	else \
   		mkdir src/main/java/dev/janetschel/calendar/year2021/day$(day); \
   		cd src/main/java/dev/janetschel/calendar/year2021/day$(day); \
 		cp ../../../../../../../template/Puzzle.java.template Puzzle.java; \
 		cp ../../../../../../../template/README.md.template README.md; \
-		touch input.txt; \
     fi
 	@echo "Files successfully created.. happy hacking :)"
 	@echo "INFO: puzzle input still needs to be pasted in manually"
