@@ -52,6 +52,8 @@ public class Puzzle implements GenericPuzzle {
             counts = newCounts;
         }
 
-        return LongStream.of(counts).sum();
+        return LongStream.of(counts).
+
+                sum();
     }
 }
