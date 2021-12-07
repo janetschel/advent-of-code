@@ -15,5 +15,5 @@ new:
 		cp ../../../../../../../template/README.md.template README.md; \
     fi
 	@echo "Files successfully created.. happy hacking :)"
-	@echo "INFO: puzzle input still needs to be pasted in manually"
+	@echo "INFO: puzzle input still needs to be pasted in manually!"
 	@git add src/main/java/dev/janetschel/calendar
