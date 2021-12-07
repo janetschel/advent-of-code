@@ -3,12 +3,12 @@ import java.util.List;
 import dev.janetschel.interfaces.GenericPuzzle;
 
 public class Puzzle implements GenericPuzzle  {
-    public Long solvePart1(List<String> input) {
+    public Object solvePart1(List<String> input) {
 
         return null;
     }
 
-    public Long solvePart2(List<String> input) {
+    public Object solvePart2(List<String> input) {
 
         return null;
     }
