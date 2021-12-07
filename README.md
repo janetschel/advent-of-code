@@ -59,7 +59,7 @@ advent-of-code/
 │   │           ├── refactored/       // <-- classes in this folder (or models) are not executed
 │   │           ├── Puzzle.java
 │   │           ├── README.md
-│   │           └── input.txt  
+│   │           └── input.txt         // <-- created by fetch utils
 │   └── utils/
 ├── Makefile 
 └── template/                        // <-- change the files in this folder if you wish to modify your blueprint
@@ -72,6 +72,14 @@ Day 01:
 01.1: 1527 (-> took ~6.7ms [6699.458µs])
 01.2: 1575 (-> took ~1.2ms [1208.291µs])
 ```
+
+## Fetch utils
+
+The fetch utils will automatically fetch the input from the current day and create an `input.txt` file.  
+If the file has been created once, it is be cached and only read from -- not updated -- so the API from won't be spammed.
+
+You need to do no setup for this -- except for your session-key. More information can be found [here](https://github.com/janetschel/advent-of-code/tree/main/src/main/resources).
+
 
 ## (Public) Leaderboard appearances
 Although each day will have its own `README.md` all of my leaderboard appearances (< 1000) for `<part1, part2>` will be listed here.  
