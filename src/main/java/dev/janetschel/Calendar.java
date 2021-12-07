@@ -8,7 +8,7 @@ import lombok.SneakyThrows;
 import java.io.IOException;
 
 import static com.google.common.reflect.ClassPath.from;
-import static dev.janetschel.annotation.ExecutedDays.Day.ALL_DAYS;
+import static dev.janetschel.annotation.ExecutedDays.Day.DAY_08;
 import static dev.janetschel.annotation.ExecutedDays.Day.getDayRepresentation;
 import static dev.janetschel.util.CommandLineTools.Part.FIRST;
 import static dev.janetschel.util.CommandLineTools.Part.SECOND;
@@ -16,9 +16,9 @@ import static dev.janetschel.util.CommandLineTools.log;
 import static dev.janetschel.util.File.read;
 import static java.lang.Thread.currentThread;
 
-@ExecutedDays(day = ALL_DAYS)
+@ExecutedDays(day = DAY_08)
 public class Calendar {
-    private static final String CURRENT_YEAR = "2018";
+    private static final String CURRENT_YEAR = "2021";
 
     @SuppressWarnings({"UnstableApiUsage", "unchecked"})
     @SneakyThrows(value = IOException.class)
@@ -29,7 +29,7 @@ public class Calendar {
         from(currentThread().getContextClassLoader())
                 .getTopLevelClasses()
                 .stream()
-                .filter(c -> c.getName().startsWith("dev.janetschel.calendar") && !c.getName().contains("refactored") && !c.getName().contains("models"))
+                .filter(c -> c.getName().startsWith("dev.janetschel.calendar.year%s".formatted(CURRENT_YEAR)) && !c.getName().contains("refactored") && !c.getName().contains("models"))
                 .filter(c -> "00".equals(specificDay) || c.getName().contains(specificDay))
                 .forEach(clazz -> new InvokablePuzzle((Class<? extends GenericPuzzle>) clazz.load()).invoke());
     }
