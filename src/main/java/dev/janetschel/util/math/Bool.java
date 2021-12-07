@@ -1,4 +1,4 @@
-package dev.janetschel.util;
+package dev.janetschel.util.math;
 
 public class Bool {
     public static int toInt(boolean bool) {

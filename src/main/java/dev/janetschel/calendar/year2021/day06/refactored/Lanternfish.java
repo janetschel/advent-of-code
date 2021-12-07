@@ -1,14 +1,14 @@
 package dev.janetschel.calendar.year2021.day06.refactored;
 
-import dev.janetschel.util.CommandLineTools;
+import dev.janetschel.util.meta.CommandLineTools;
 
 import java.util.List;
 
-import static dev.janetschel.util.ArrayUtil.fromInput;
-import static dev.janetschel.util.CommandLineTools.Part.FIRST;
-import static dev.janetschel.util.CommandLineTools.Part.SECOND;
-import static dev.janetschel.util.CommandLineTools.log;
-import static dev.janetschel.util.File.read;
+import static dev.janetschel.util.datastructure.ArrayUtil.fromInput;
+import static dev.janetschel.util.meta.CommandLineTools.Part.FIRST;
+import static dev.janetschel.util.meta.CommandLineTools.Part.SECOND;
+import static dev.janetschel.util.meta.CommandLineTools.log;
+import static dev.janetschel.util.meta.File.read;
 import static java.util.stream.LongStream.of;
 
 public class Lanternfish {

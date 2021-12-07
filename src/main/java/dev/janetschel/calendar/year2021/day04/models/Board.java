@@ -1,12 +1,12 @@
 package dev.janetschel.calendar.year2021.day04.models;
 
-import dev.janetschel.util.ListUtil;
+import dev.janetschel.util.datastructure.ListUtil;
 import lombok.Data;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static dev.janetschel.util.ArrayUtil.rotateClockwise;
+import static dev.janetschel.util.datastructure.ArrayUtil.rotateClockwise;
 
 @Data
 public class Board {

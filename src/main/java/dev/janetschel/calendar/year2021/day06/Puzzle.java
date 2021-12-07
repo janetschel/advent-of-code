@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.LongStream;
 
-import static dev.janetschel.util.Converter.longs;
+import static dev.janetschel.util.converter.Converter.longs;
 import static java.lang.Integer.parseInt;
 
 public class Puzzle implements GenericPuzzle {

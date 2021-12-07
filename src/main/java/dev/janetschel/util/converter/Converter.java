@@ -1,4 +1,6 @@
-package dev.janetschel.util;
+package dev.janetschel.util.converter;
+
+import dev.janetschel.util.model.Pair;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -13,10 +15,11 @@ public class Converter {
 
     /**
      * Returns a List of Pair<T>|s
+     *
      * @param in List<T> any input of type 1,2,3,...
-     * @return List<Pair<Long>> of type <1, 2>, <3,...>. The first element is ignored and will only be the first element for the second Pair
+     * @return List<Pair < Long>> of type <1, 2>, <3,...>. The first element is ignored and will only be the first element for the second Pair
      */
-    public static<T> List<Pair<T>> pairs(List<T> in) {
+    public static <T> List<Pair<T>> pairs(List<T> in) {
         var out = new ArrayList<Pair<T>>();
         for (int i = 1; i < in.size(); i++) {
             // prev, curr
@@ -28,6 +31,7 @@ public class Converter {
 
     /**
      * Combines neighboring elements of a List<T>
+     *
      * @param step Stepsize (combine step elements to a new one)
      * @return new List<T>
      */

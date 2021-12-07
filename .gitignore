@@ -3,6 +3,7 @@
 
 .DS_Store
 target
+src/main/resources/secret.yml
 
 # User-specific stuff
 .idea/**/workspace.xml

@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.regex.Pattern;
 
 import static dev.janetschel.calendar.year2021.day05.models.Instruction.init;
-import static dev.janetschel.util.ArrayUtil.initSquareArray;
+import static dev.janetschel.util.datastructure.ArrayUtil.initSquareArray;
 
 @SuppressWarnings("DuplicatedCode")
 public class Puzzle implements GenericPuzzle {

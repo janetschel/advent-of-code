@@ -6,7 +6,7 @@ import dev.janetschel.interfaces.GenericPuzzle;
 import java.util.List;
 import java.util.stream.Stream;
 
-import static dev.janetschel.util.Bool.toInt;
+import static dev.janetschel.util.math.Bool.toInt;
 
 public class InventoryManagementSystem implements GenericPuzzle {
     public Long solvePart1(List<String> in) {

@@ -2,21 +2,21 @@ package dev.janetschel;
 
 import dev.janetschel.annotation.ExecutedDays;
 import dev.janetschel.interfaces.GenericPuzzle;
-import dev.janetschel.util.CommandLineTools;
+import dev.janetschel.util.meta.CommandLineTools;
 import lombok.SneakyThrows;
 
 import java.io.IOException;
 
 import static com.google.common.reflect.ClassPath.from;
-import static dev.janetschel.annotation.ExecutedDays.Day.DAY_08;
+import static dev.janetschel.annotation.ExecutedDays.Day.ALL_DAYS;
 import static dev.janetschel.annotation.ExecutedDays.Day.getDayRepresentation;
-import static dev.janetschel.util.CommandLineTools.Part.FIRST;
-import static dev.janetschel.util.CommandLineTools.Part.SECOND;
-import static dev.janetschel.util.CommandLineTools.log;
-import static dev.janetschel.util.File.read;
+import static dev.janetschel.util.meta.CommandLineTools.Part.FIRST;
+import static dev.janetschel.util.meta.CommandLineTools.Part.SECOND;
+import static dev.janetschel.util.meta.CommandLineTools.log;
+import static dev.janetschel.util.meta.File.read;
 import static java.lang.Thread.currentThread;
 
-@ExecutedDays(day = DAY_08)
+@ExecutedDays(day = ALL_DAYS)
 public class Calendar {
     private static final String CURRENT_YEAR = "2021";
 
@@ -41,9 +41,10 @@ public class Calendar {
             var name = puzzle.getClass().getPackageName();
             var day = name.substring(name.length() - 2);
 
+            System.out.printf("\nDay %s:\n", day);
+
             var input = read(CURRENT_YEAR, day);
 
-            System.out.printf("\nDay %s:\n", day);
             log(new CommandLineTools.Day(day, FIRST), puzzle::solvePart1, input);
             log(new CommandLineTools.Day(day, SECOND), puzzle::solvePart2, input);
         }

@@ -1,4 +1,4 @@
-package dev.janetschel.util;
+package dev.janetschel.util.meta;
 
 import lombok.SneakyThrows;
 

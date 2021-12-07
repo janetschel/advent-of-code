@@ -1,4 +1,4 @@
-package dev.janetschel.util;
+package dev.janetschel.util.datastructure;
 
 import dev.janetschel.calendar.year2021.day04.models.Number;
 

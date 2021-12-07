@@ -4,7 +4,7 @@ import dev.janetschel.interfaces.GenericPuzzle;
 
 import java.util.List;
 
-import static dev.janetschel.util.Converter.longs;
+import static dev.janetschel.util.converter.Converter.longs;
 
 public class Puzzle implements GenericPuzzle {
     public Long solvePart1(List<String> input) {

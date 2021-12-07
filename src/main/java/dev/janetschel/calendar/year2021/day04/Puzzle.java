@@ -8,8 +8,8 @@ import java.util.Arrays;
 import java.util.List;
 
 import static dev.janetschel.calendar.year2021.day04.models.Board.boardFromInput;
-import static dev.janetschel.util.ListUtil.enqueue;
-import static dev.janetschel.util.ListUtil.list;
+import static dev.janetschel.util.datastructure.ListUtil.enqueue;
+import static dev.janetschel.util.datastructure.ListUtil.list;
 
 public class Puzzle implements GenericPuzzle {
     public Long solvePart1(List<String> input) {
