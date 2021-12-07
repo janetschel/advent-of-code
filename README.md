@@ -1,4 +1,7 @@
-# Advent of Code 
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/46886724/145045869-97cb7298-bb88-4d10-9e43-099a943d894c.png" alt="Advent of Code" width="240" height="400" />
+</p>
+
 Welcome to my repo for all Advent of Codes [advent-of-code](https://adventofcode.com/).  
 I have decided to -- from now on -- redo all AoC's done so far (and all future AoC's) in Java, so I made this repository to host them all.
 
@@ -8,7 +11,7 @@ I have decided to -- from now on -- redo all AoC's done so far (and all future A
 - [./Makefile](https://github.com/janetschel/advent-of-code/blob/main/Makefile) to automatically create each new day from template files for THE CURRENT YEAR
 - util package for whatever
 - Day's ([dev/janetschel/calendar/dayx/](https://github.com/janetschel/advent-of-code/tree/main/src/main/java/dev/janetschel/calendar)) are set up like this:
-  - `input.txt` for the input → needs to be copy + pasted manually (no fetch utils this year around -- I couldn't be bothered)
+  - `input.txt` for the input → will be fetched automatically and NOT created by the Makefile
   - `Puzzle.java` for the actual solution each day
   - `README.md` for solve times (if year >= 2020, before that, I didn't do AoC)
 
@@ -16,7 +19,7 @@ I have decided to -- from now on -- redo all AoC's done so far (and all future A
 All you need to do if you want to create a new day to start coding is: 
 
 - In the terminal navigate to `./`
-- Type following: `make new`
+- Type following: `make new year=<year>`
 
 This will generate the needed file structure for `day x` in this year's AoC
 
