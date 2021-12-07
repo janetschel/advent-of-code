@@ -1,4 +1,4 @@
-package dev.janetschel.calendar.day03;
+package dev.janetschel.calendar.year2021.day03;
 
 import dev.janetschel.interfaces.GenericPuzzle;
 import org.jooq.lambda.Seq;
@@ -44,9 +44,9 @@ public class Puzzle implements GenericPuzzle {
         var mostCommon = new ArrayList<String>();
         for (var i = new AtomicInteger(0); i.get() < in.get(0).length(); i.incrementAndGet()) {
             var current = (String) Seq.of(
-                        in.stream()
-                        .map(bin -> String.valueOf(bin.charAt(i.get())))
-                        .sorted(reverseOrder()).toArray())
+                            in.stream()
+                                    .map(bin -> String.valueOf(bin.charAt(i.get())))
+                                    .sorted(reverseOrder()).toArray())
                     .mode()
                     .orElseThrow();
 

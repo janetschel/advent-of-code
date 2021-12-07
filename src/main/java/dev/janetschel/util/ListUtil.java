@@ -1,6 +1,6 @@
 package dev.janetschel.util;
 
-import dev.janetschel.calendar.day04.models.Number;
+import dev.janetschel.calendar.year2021.day04.models.Number;
 
 import java.util.ArrayList;
 import java.util.List;

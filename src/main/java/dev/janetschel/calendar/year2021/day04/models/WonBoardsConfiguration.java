@@ -1,4 +1,4 @@
-package dev.janetschel.calendar.day04.models;
+package dev.janetschel.calendar.year2021.day04.models;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

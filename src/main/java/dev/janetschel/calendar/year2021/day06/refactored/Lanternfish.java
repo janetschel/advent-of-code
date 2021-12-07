@@ -1,4 +1,4 @@
-package dev.janetschel.calendar.day06.refactored;
+package dev.janetschel.calendar.year2021.day06.refactored;
 
 import dev.janetschel.util.CommandLineTools;
 
@@ -13,7 +13,7 @@ import static java.util.stream.LongStream.of;
 
 public class Lanternfish {
     public static void main(String[] args) {
-        var input = read("06");
+        var input = read("2021", "06");
         var lanternfish = new Lanternfish();
 
         System.out.println("Refactored solution for day 06:");

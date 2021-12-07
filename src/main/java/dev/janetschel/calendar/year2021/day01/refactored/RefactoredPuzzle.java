@@ -1,4 +1,4 @@
-package dev.janetschel.calendar.day01.refactored;
+package dev.janetschel.calendar.year2021.day01.refactored;
 
 import java.util.List;
 
@@ -7,7 +7,7 @@ import static dev.janetschel.util.File.read;
 
 public class RefactoredPuzzle {
     public static void main(String[] args) {
-        var input = longs(read("01"));
+        var input = longs(read("2021", "01"));
         var rp = new RefactoredPuzzle();
 
         System.out.printf("Solution Part 1: %s%n", rp.solvePart1(input));

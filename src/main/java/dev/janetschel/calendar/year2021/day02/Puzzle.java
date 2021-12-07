@@ -1,4 +1,4 @@
-package dev.janetschel.calendar.day02;
+package dev.janetschel.calendar.year2021.day02;
 
 import dev.janetschel.interfaces.GenericPuzzle;
 
@@ -9,7 +9,7 @@ public class Puzzle implements GenericPuzzle {
         var hor = 0L;
         var depth = 0L;
 
-        for (var cmd: input) {
+        for (var cmd : input) {
             var in = cmd.split(" ");
             var dir = in[0];
             var x = Long.parseLong(in[1]);
@@ -29,7 +29,7 @@ public class Puzzle implements GenericPuzzle {
         var depth = 0L;
         var aim = 0L;
 
-        for (var cmd: input) {
+        for (var cmd : input) {
             var in = cmd.split(" ");
             var dir = in[0];
             var x = Long.parseLong(in[1]);

@@ -1,4 +1,4 @@
-package dev.janetschel.calendar.day05.models;
+package dev.janetschel.calendar.year2021.day05.models;
 
 import static java.lang.Long.parseLong;
 

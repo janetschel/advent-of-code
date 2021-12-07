@@ -1,13 +1,13 @@
-package dev.janetschel.calendar.day04;
+package dev.janetschel.calendar.year2021.day04;
 
-import dev.janetschel.calendar.day04.models.Board;
-import dev.janetschel.calendar.day04.models.WonBoardsConfiguration;
+import dev.janetschel.calendar.year2021.day04.models.Board;
+import dev.janetschel.calendar.year2021.day04.models.WonBoardsConfiguration;
 import dev.janetschel.interfaces.GenericPuzzle;
 
 import java.util.Arrays;
 import java.util.List;
 
-import static dev.janetschel.calendar.day04.models.Board.boardFromInput;
+import static dev.janetschel.calendar.year2021.day04.models.Board.boardFromInput;
 import static dev.janetschel.util.ListUtil.enqueue;
 import static dev.janetschel.util.ListUtil.list;
 

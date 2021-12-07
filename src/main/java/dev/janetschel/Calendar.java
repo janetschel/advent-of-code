@@ -8,7 +8,7 @@ import lombok.SneakyThrows;
 import java.io.IOException;
 
 import static com.google.common.reflect.ClassPath.from;
-import static dev.janetschel.annotation.ExecutedDays.Day.DAY_07;
+import static dev.janetschel.annotation.ExecutedDays.Day.ALL_DAYS;
 import static dev.janetschel.annotation.ExecutedDays.Day.getDayRepresentation;
 import static dev.janetschel.util.CommandLineTools.Part.FIRST;
 import static dev.janetschel.util.CommandLineTools.Part.SECOND;
@@ -16,12 +16,14 @@ import static dev.janetschel.util.CommandLineTools.log;
 import static dev.janetschel.util.File.read;
 import static java.lang.Thread.currentThread;
 
-@ExecutedDays(day = DAY_07)
+@ExecutedDays(day = ALL_DAYS)
 public class Calendar {
+    private static final String CURRENT_YEAR = "2018";
+
     @SuppressWarnings({"UnstableApiUsage", "unchecked"})
     @SneakyThrows(value = IOException.class)
     public static void main(String[] args) {
-        System.out.print("Solutions for Advent of Code 2021");
+        System.out.printf("Solutions for Advent of Code %s", CURRENT_YEAR);
         var specificDay = parseAnnotation();
 
         from(currentThread().getContextClassLoader())
@@ -39,7 +41,7 @@ public class Calendar {
             var name = puzzle.getClass().getPackageName();
             var day = name.substring(name.length() - 2);
 
-            var input = read(day);
+            var input = read(CURRENT_YEAR, day);
 
             System.out.printf("\nDay %s:\n", day);
             log(new CommandLineTools.Day(day, FIRST), puzzle::solvePart1, input);

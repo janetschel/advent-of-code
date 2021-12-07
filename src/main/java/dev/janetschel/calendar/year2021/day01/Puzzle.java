@@ -1,4 +1,4 @@
-package dev.janetschel.calendar.day01;
+package dev.janetschel.calendar.year2021.day01;
 
 import dev.janetschel.interfaces.GenericPuzzle;
 
