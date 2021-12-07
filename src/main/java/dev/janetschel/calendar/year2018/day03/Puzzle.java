@@ -5,7 +5,7 @@ import dev.janetschel.interfaces.GenericPuzzle;
 import java.util.HashMap;
 import java.util.List;
 
-public class Slice implements GenericPuzzle {
+public class Puzzle implements GenericPuzzle {
     public Long solvePart1(List<String> in) {
         return calculateTakenSquares(in)
                 .values()

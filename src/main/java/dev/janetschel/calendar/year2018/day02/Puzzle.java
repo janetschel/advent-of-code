@@ -8,7 +8,7 @@ import java.util.stream.Stream;
 
 import static dev.janetschel.util.math.Bool.toInt;
 
-public class InventoryManagementSystem implements GenericPuzzle {
+public class Puzzle implements GenericPuzzle {
     public Long solvePart1(List<String> in) {
         var counts = new int[2];
 

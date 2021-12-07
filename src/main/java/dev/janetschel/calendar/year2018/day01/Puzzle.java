@@ -5,7 +5,7 @@ import dev.janetschel.interfaces.GenericPuzzle;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ChronalCalibration implements GenericPuzzle {
+public class Puzzle implements GenericPuzzle {
     public Long solvePart1(List<String> in) {
         return in.stream()
                 .mapToLong(Long::parseLong)
