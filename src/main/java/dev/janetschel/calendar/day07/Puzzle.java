@@ -35,10 +35,8 @@ public class Puzzle implements GenericPuzzle {
                 .map(Long::parseLong)
                 .toList();
 
-        var max = max(longs);
-
-        var smallestFuel = 10000000000L;
-        for (int i = 1; i < max; i++) {
+        var smallestFuel = Long.MAX_VALUE;
+        for (int i = 1; i < max(longs); i++) {
             var currentFuel = 0;
             for (Long current : longs) {
                 var diff = Math.abs(current - i);
