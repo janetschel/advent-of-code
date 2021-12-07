@@ -21,7 +21,7 @@ All you need to do if you want to create a new day to start coding is:
 This will generate the needed file structure for `day x` in this year's AoC
 
 ## Utils
-My [utils](https://github.com/janetschel/advent-of-code/tree/main/src/main/java/dev/janetschel/utils) will have some handy functions/classes to work with the input.  
+My [utils](https://github.com/janetschel/advent-of-code/tree/main/src/main/java/dev/janetschel/util) will have some handy functions/classes to work with the input.  
 
 ## Dynamic execution of code
 
