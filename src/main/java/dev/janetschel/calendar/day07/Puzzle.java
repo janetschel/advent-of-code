@@ -17,7 +17,7 @@ public class Puzzle implements GenericPuzzle {
         var smallestFuel = Long.MAX_VALUE;
         for (int i = 1; i < max(longs); i++) {
             var currentFuel = 0L;
-            for (Long current : longs) {
+            for (var current : longs) {
                 var diff = Math.abs(current - i);
                 currentFuel += diff;
             }
@@ -38,7 +38,7 @@ public class Puzzle implements GenericPuzzle {
         var smallestFuel = Long.MAX_VALUE;
         for (int i = 1; i < max(longs); i++) {
             var currentFuel = 0;
-            for (Long current : longs) {
+            for (var current : longs) {
                 var diff = Math.abs(current - i);
                 currentFuel += diff * (diff + 1) / 2; // gauss
             }
