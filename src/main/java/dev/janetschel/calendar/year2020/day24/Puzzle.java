@@ -8,36 +8,20 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Puzzle implements GenericPuzzle {
-    public Object solvePart1(List<String> in) {
+    public Long solvePart1(List<String> in) {
         return getTileBoard(in).stream()
                 .filter(tile -> tile.getFacingUp() == Tile.Face.BLACK)
                 .count();
     }
 
     // Solving conways game of tiles YAY! :)
-    public Object solvePart2(List<String> in) {
+    public Long solvePart2(List<String> in) {
         var board = getTileBoard(in);
 
-        for (int i = 0; i < 100; i++) {
+        for (int i = 0; i < 1; i++) {
             var needsFlipping = new ArrayList<Tile>();
-            for (var tile : board) {
 
-                var numNeighbors = board.stream()
-                        .filter(tile::isNeighbor)
-                        .filter(current -> current.getFacingUp() == Tile.Face.BLACK)
-                        .count();
-
-                // Both cases need flipping but too ugly to be putting it in one if
-                if ((tile.getFacingUp() == Tile.Face.BLACK && (numNeighbors == 0 || numNeighbors >= 2))) {
-                    needsFlipping.add(tile);
-                }
-
-                if (tile.getFacingUp() == Tile.Face.WHITE && numNeighbors == 2) {
-                    needsFlipping.add(tile);
-                }
-            }
-            
-            needsFlipping.forEach(Tile::flipTile);
+            // TODO: finish part 2 -> also tiles that are not in the board may need to be flipped
         }
 
 
