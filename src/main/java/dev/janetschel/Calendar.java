@@ -8,7 +8,7 @@ import lombok.SneakyThrows;
 import java.io.IOException;
 
 import static com.google.common.reflect.ClassPath.from;
-import static dev.janetschel.annotation.ExecutedDays.Day.ALL_DAYS;
+import static dev.janetschel.annotation.ExecutedDays.Day.DAY_08;
 import static dev.janetschel.annotation.ExecutedDays.Day.getDayRepresentation;
 import static dev.janetschel.util.meta.CommandLineTools.Part.FIRST;
 import static dev.janetschel.util.meta.CommandLineTools.Part.SECOND;
@@ -16,7 +16,7 @@ import static dev.janetschel.util.meta.CommandLineTools.log;
 import static dev.janetschel.util.meta.File.read;
 import static java.lang.Thread.currentThread;
 
-@ExecutedDays(day = ALL_DAYS)
+@ExecutedDays(day = DAY_08)
 public class Calendar {
     private static final String CURRENT_YEAR = "2021";
 
