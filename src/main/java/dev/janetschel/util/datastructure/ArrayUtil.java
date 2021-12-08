@@ -38,4 +38,13 @@ public class ArrayUtil {
 
         return counts;
     }
+
+    public static <T> int findInArray(T[] mapping, T curr) {
+        for (var i = 0; i < mapping.length; i++) {
+            if (mapping[i].equals(curr)) {
+                return i;
+            }
+        }
+        return -1;
+    }
 }
