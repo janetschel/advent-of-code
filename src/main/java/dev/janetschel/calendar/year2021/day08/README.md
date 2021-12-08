@@ -1,6 +1,6 @@
 # Solve times
 
-(Woke up 5 minutes late today → solve times are `-5min`)
+(Woke up 5 minutes late today → solve times are actually `-5min`)
 
 - `00:17:01` for part 1 (#4737)
 - `01:27:16` for part 2 (#3978)
