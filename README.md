@@ -83,10 +83,3 @@ If the file has been created once, it is be cached and only read from -- not upd
 
 You need to do no setup for this -- except for your session-key. More information can be found [here](https://github.com/janetschel/advent-of-code/tree/main/src/main/resources).
 
-
-## (Public) Leaderboard appearances
-Although each day will have its own `README.md` all of my leaderboard appearances (< 1000) for `<part1, part2>` will be listed here.  
-For the exact solve times check out each day's `README.md`. 
-
-- Day 1: #724, #675
-- Day 2: ----, #650
