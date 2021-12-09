@@ -8,7 +8,7 @@ import lombok.SneakyThrows;
 import java.io.IOException;
 
 import static com.google.common.reflect.ClassPath.from;
-import static dev.janetschel.annotation.ExecutedDays.Day.DAY_24;
+import static dev.janetschel.annotation.ExecutedDays.Day.DAY_09;
 import static dev.janetschel.annotation.ExecutedDays.Day.getDayRepresentation;
 import static dev.janetschel.util.meta.CommandLineTools.Part.FIRST;
 import static dev.janetschel.util.meta.CommandLineTools.Part.SECOND;
@@ -16,9 +16,9 @@ import static dev.janetschel.util.meta.CommandLineTools.log;
 import static dev.janetschel.util.meta.File.read;
 import static java.lang.Thread.currentThread;
 
-@ExecutedDays(day = DAY_24)
+@ExecutedDays(day = DAY_09)
 public class Calendar {
-    private static final String CURRENT_YEAR = "2020";
+    private static final String CURRENT_YEAR = "2021";
 
     @SuppressWarnings({"UnstableApiUsage", "unchecked"})
     @SneakyThrows(value = IOException.class)
