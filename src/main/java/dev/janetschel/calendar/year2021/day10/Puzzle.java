@@ -11,7 +11,6 @@ public class Puzzle implements GenericPuzzle {
 
     public Long solvePart1(List<String> input) {
         var corrputed = 0L;
-        var incompleteChunks = new ArrayList<>();
         for (var line : input) {
             var opening = new Stack<Character>();
 
