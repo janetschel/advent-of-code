@@ -10,7 +10,6 @@ public class Puzzle implements GenericPuzzle {
     private final List<Character> openChars = List.of('(', '[', '{', '<');
 
     public Long solvePart1(List<String> input) {
-
         var corrputed = 0L;
         var incompleteChunks = new ArrayList<>();
         for (var line : input) {
