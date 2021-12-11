@@ -47,4 +47,26 @@ public class ArrayUtil {
         }
         return -1;
     }
+
+    public static void incrementArray(Long[][] toInc) {
+        for (int i = 0; i < toInc.length; i++) {
+            for (int j = 0; j < toInc[i].length; j++) {
+                toInc[i][j]++;
+            }
+        }
+    }
+
+    public static void incrementDiagonally(int i, int j, Long[][] arr) {
+        for (int diagonallyI = -1; diagonallyI <= 1; diagonallyI++) {
+            for (int diagonallyJ = -1; diagonallyJ <= 1; diagonallyJ++) {
+                if (diagonallyI != 0 || diagonallyJ != 0) {
+                    if (i + diagonallyI >= 0 && i + diagonallyI < arr.length
+                            && j + diagonallyJ >= 0 && j + diagonallyJ < arr[i].length) {
+
+                        arr[i + diagonallyI][j + diagonallyJ]++;
+                    }
+                }
+            }
+        }
+    }
 }
